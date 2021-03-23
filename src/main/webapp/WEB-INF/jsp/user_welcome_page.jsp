@@ -14,7 +14,7 @@
     <h2 width="80%" align="center" style="margin-top:0px;">Low Cost перевозчик</h2>
 </div>
 <div style="width:10%; display: block; float:left">
-    <form action="authorization" method="get">
+    <form action="controller" method="get">
         <input type="hidden" name="command" value="go_to_profile_page">
         <input type="submit" value="профиль" align="right">
     </form>

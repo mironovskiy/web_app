@@ -1,9 +1,11 @@
 package by.epamtc.web_app.entity;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class UserAuthData {
+public class UserAuthData implements Serializable {
 
+    private static final long serialVersionUID = 2949363305125203047L;
     private String login;
     private String password;
     private String role;

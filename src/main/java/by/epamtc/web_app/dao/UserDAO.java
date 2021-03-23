@@ -8,5 +8,7 @@ public interface UserDAO {
 
     boolean authentification (UserAuthData userAuthData) throws DaoException;
 
+    String authorization(String login) throws DaoException;
+
     boolean registration(UserRegInfo userRegInfo) throws DaoException;
 }

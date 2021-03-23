@@ -9,12 +9,22 @@
 </welcome-file-list>
 
   <servlet>
-    <servlet-name>Authorization</servlet-name>
-    <servlet-class>by.epamtc.web_app.controller.AuthorizationController</servlet-class>
+    <servlet-name>Controller</servlet-name>
+    <servlet-class>by.epamtc.web_app.controller.Controller</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Authorization</servlet-name>
-    <url-pattern>/authorization</url-pattern>
+    <servlet-name>Controller</servlet-name>
+    <url-pattern>/controller</url-pattern>
   </servlet-mapping>
+
+  <filter>
+    <filter-name>RegistrationFilter</filter-name>
+    <filter-class>by.epamtc.web_app.controller.filter.RegistrationFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>RegistrationFilter</filter-name>
+    <url-pattern>/controller</url-pattern>
+  </filter-mapping>
 
 </web-app>

@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class AuthorizationController extends HttpServlet {
+public class Controller extends HttpServlet {
     private final CommandProvider provider = new CommandProvider();
 
     private static final String COMMAND_NAME = "command";

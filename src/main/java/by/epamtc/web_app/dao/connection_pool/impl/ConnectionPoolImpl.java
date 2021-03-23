@@ -23,7 +23,6 @@ public class ConnectionPoolImpl implements ConnectionPool {
     private static int timeout;
 
     private ConnectionPoolImpl(){
-
         driver = DBConfig.DRIVER;
         url = DBConfig.URL;
         user = DBConfig.USERNAME;

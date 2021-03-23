@@ -16,6 +16,8 @@ public class CommandProvider {
         commands.put(ParameterName.GO_TO_REGISTRATION_PAGE, new GoToRegistrationPage());
         commands.put(ParameterName.GO_TO_WELCOME_PAGE, new GoToWelcomePage());
         commands.put(ParameterName.GO_TO_USER_WELCOME_PAGE, new GoToUserWelcomePage());
+        commands.put(ParameterName.GO_TO_ERROR_PAGE, new GoToErrorPage());
+        commands.put(ParameterName.GO_TO_ADMIN_WELCOME_PAGE, new GoToAdminWelcomePage());
     }
 
     public Command getCommand(String commandName){
